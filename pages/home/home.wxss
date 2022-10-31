@@ -1,0 +1,44 @@
+/* pages/home/home.wxss */
+swiper {
+  height: 350rpx;
+}
+
+swiper image {
+  height: 100%;
+  width: 100%;
+}
+
+.gridList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gridItem {
+  width: 250rpx;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2rpx solid lightgray;
+  box-sizing: border-box;
+}
+
+.gridItem image {
+  height: 80rpx;
+  width: 80rpx;
+}
+
+.gridItem text {
+  margin-top: 20rpx;
+}
+
+.img {
+  display: flex;
+  padding: 20rpx 20rpx;
+  justify-content: space-around;
+}
+
+.img image {
+  width: 40%;
+}

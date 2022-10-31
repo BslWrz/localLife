@@ -1,0 +1,21 @@
+<!--pages/home/home.wxml-->
+<!-- 轮播图 -->
+<swiper indicator-dots circular autoplay>
+  <swiper-item wx:for="{{swiperList}}" wx:key="id">
+    <image src="{{item.image}}"></image>
+  </swiper-item>
+</swiper>
+
+<!-- 九宫格 -->
+<view class="gridList">
+  <view class="gridItem" wx:for="{{gridList}}" wx:key="id">
+    <image src="{{item.icon}}"></image>
+    <text>{{item.name}}</text>
+  </view>
+</view>
+
+<!-- 图片 -->
+<view class="img">
+  <image src="/image/idea.png" mode="widthFix"></image>
+  <image src="/image/pycharm.png" mode="widthFix"></image>
+</view>
