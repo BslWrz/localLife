@@ -1,2 +1,6 @@
 <!--pages/contact/contact.wxml-->
-<text>pages/contact/contact.wxml</text>
+<navigator url="../logs/logs?message=success">查看启动日志</navigator>
+
+<view wx:for="{{colorList}}" wx:key="*this" class="colorItem" style="background-color: rgba({{item}});">
+  RGB: {{item}}
+</view>

@@ -15,7 +15,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    this.getSwiperList(),
+    this.getSwiperList()
     this.getGridList()
   },
 
@@ -25,10 +25,10 @@ Page({
       url: 'https://www.escook.cn/slides',
       method: "GET",
       success: (res) => {
-        console.log(res),
-          this.setData({
-            swiperList: res.data
-          })
+        // console.log(res)
+        this.setData({
+          swiperList: res.data
+        })
       }
     })
   },
@@ -39,10 +39,10 @@ Page({
       url: 'https://www.escook.cn/categories',
       method: "GET",
       success: (res) => {
-        console.log(res),
-          this.setData({
-            gridList: res.data
-          })
+        // console.log(res)
+        this.setData({
+          gridList: res.data
+        })
       }
     })
   },
