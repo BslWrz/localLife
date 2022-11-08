@@ -21,7 +21,7 @@ Page({
       url: 'https://www.escook.cn/api/color',
       method: 'GET',
       success: (res) => {
-        console.log(res.data)
+        console.log(res)
         this.setData({
           colorList: [...this.data.colorList, ...res.data.data]
         })

@@ -23,7 +23,7 @@ Page({
   getSwiperList() {
     wx.request({
       url: 'https://www.escook.cn/slides',
-      method: "GET",
+      method: 'GET',
       success: (res) => {
         // console.log(res)
         this.setData({
