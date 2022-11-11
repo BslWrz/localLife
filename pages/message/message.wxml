@@ -2,6 +2,10 @@
 <view>{{m1.toUpper("pages/message/message.wxml")}}</view>
 <view>{{m2.toLower("BslWrz")}}</view>
 
+<!-- 自定义组件 -->
+<myTest1 max="5"></myTest1>
+<myTest2></myTest2>
+
 <!-- 内置脚本wxs -->
 <wxs module="m1">
   module.exports.toUpper = function (str) {
@@ -10,4 +14,4 @@
 </wxs>
 
 <!-- 外联脚本wxs -->
-<wxs src="../../utils/tools.wxs" module="m2"></wxs>
+<wxs src="/utils/tools.wxs" module="m2"></wxs>

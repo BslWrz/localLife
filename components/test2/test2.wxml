@@ -1,0 +1,7 @@
+<!--components/test2/test2.wxml-->
+<view></view>
+<button bindtap="n1Add" size="mini">n1____+1</button>
+<view></view>
+<button bindtap="n2Add" size="mini">n2____+1</button>
+<!-- 通过监听器实现 -->
+<view>{{n1}}+{{n2}}={{sum}}</view>

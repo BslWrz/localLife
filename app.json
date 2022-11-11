@@ -12,6 +12,7 @@
     "navigationBarTitleText": "本地生活",
     "navigationBarTextStyle": "black"
   },
+  "usingComponents": {},
   "tabBar": {
     "list": [{
       "pagePath": "pages/home/home",

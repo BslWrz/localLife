@@ -1,0 +1,16 @@
+function toLower(str) {
+  return str.toLowerCase()
+}
+
+function splitPhoneNumber(str) {
+  if (str.length !== 11) return str
+  var arr = str.split('')
+  arr.splice(3, 0, '-') // index, 删除数量, 插入元素(可选)
+  arr.splice(8, 0, '-')
+  return arr.join('')
+}
+
+module.exports = {
+  toLower: toLower,
+  splitPhoneNumber: splitPhoneNumber
+}

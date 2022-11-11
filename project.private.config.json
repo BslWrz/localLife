@@ -9,8 +9,8 @@
       "list": [
         {
           "name": "",
-          "pathName": "pages/shoplist/shoplist",
-          "query": "id=1&title=美食",
+          "pathName": "pages/message/message",
+          "query": "",
           "launchMode": "default",
           "scene": null
         }
