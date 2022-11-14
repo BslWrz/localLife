@@ -1,10 +1,17 @@
 // components/test2/test2.js
 Component({
+  options: {
+    pureDataPattern: /^_/ //满足此正则表达式的字段为纯数据字段，不参加渲染
+  },
+
   /**
    * 组件的属性列表
    */
   properties: {
-
+    addend: {
+      type: Number,
+      value: 1
+    }
   },
 
   /**
@@ -13,7 +20,8 @@ Component({
   data: {
     n1: 0,
     n2: 0,
-    sum: 0
+    sum: 0,
+    newAddend: 1
   },
 
   /**
@@ -22,12 +30,12 @@ Component({
   methods: {
     n1Add() {
       this.setData({
-        n1: this.data.n1 + 1
+        n1: this.data.n1 + this.properties.addend
       })
     },
     n2Add() {
       this.setData({
-        n2: this.data.n2 + 1
+        n2: this.data.n2 + this.properties.addend
       })
     }
   },
@@ -39,5 +47,23 @@ Component({
         sum: n1 + n2
       })
     }
+  },
+
+  // 生命周期函数
+  lifetimes: {
+    created() {},
+    attached() {},
+    detached() {}
+  },
+
+  // 监听页面生命周期函数
+  pageLifetimes: {
+    show() {
+      this.setData({
+        newAddend: this.properties.addend
+      })
+    },
+    hide() {},
+    resize() {}
   }
 })

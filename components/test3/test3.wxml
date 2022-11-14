@@ -1,0 +1,10 @@
+<!--components/test3.wxml-->
+<text>test3组件内部内容</text>
+<!-- 组件插槽 -->
+<view>
+  <slot name="before"></slot>
+  <text>addend = {{addend}}</text>
+  <slot name="after"></slot>
+</view>
+<!-- 父类向子类传参 -->
+<myTest2 addend="{{addend}}"></myTest2>

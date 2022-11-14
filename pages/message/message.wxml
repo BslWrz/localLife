@@ -5,6 +5,10 @@
 <!-- 自定义组件 -->
 <myTest1 max="5"></myTest1>
 <myTest2></myTest2>
+<myTest3>
+  <view slot="before">before插槽</view>
+  <view slot="after">after插槽</view>
+</myTest3>
 
 <!-- 内置脚本wxs -->
 <wxs module="m1">
